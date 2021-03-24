@@ -1,0 +1,248 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	Color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	
+	padding-top: 80px;
+}
+
+h1 {
+	font-size: 2.3em;
+  line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+.slider{
+    width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*Centro de pagina*/
+.contenido-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    color: rgb(20, 20, 20);
+    overflow: hidden;
+
+}
+.contenido-header .textos-header{
+    width: 50%;
+	
+
+}
+.contenido-header .textos-header h1{
+    font-size: 40px;
+	justify-content: left;
+	display: inline-block;
+    color:rgb(22, 1, 24);
+
+}
+.contenido-header .textos-header a{
+    display: inline-block;
+    color:rgb(22, 1, 24);
+    border: 1px solid  rgb(111, 20, 114);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 300;
+    margin-top: 20px;
+    padding: 5px 2px;
+    width: 120px;
+    text-align: center;
+
+}
+.contenido-header .img-header {
+    width: 50%;
+
+}
+.contenido-header .img-header img{
+    width: 100%;
+
+}
+.servicio-contenido{
+	background: lightgray;
+	padding-top: 30px;
+	padding-right: 30px;
+	margin: auto;
+}
+.servicio{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.servicio .img-servicio{
+	width: 70%;
+	padding-left: 3vmax;
+	padding-right: 3vmax;
+	display: flexbox;
+}
+
+.servicio .img-servicio img{
+	width: 100%;
+}
+
+.servicio .contenido-servicio p{
+	text-align: justify;
+	margin-bottom: 20px;
+
+}
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+	background: #333;
+	color: white;
+	height: 80px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+	#main-header a {
+		color: white;
+	}
+	
+	
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+	
+
+
+
+/************ 
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+	#main-content header,
+	#main-content .content {
+		padding: 40px;
+	}
+	
+
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
